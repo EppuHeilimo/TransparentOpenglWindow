@@ -36,6 +36,10 @@ Window::Window()
 	assert(NoWindow::MakeBackgroundTransparent(handle));
 	NoWindow::ToggleWindowClickThrough(handle);
 	NoWindow::MakeAlwaysOnTop(handle);
+	width = GetSystemMetrics(SM_CXSCREEN);
+	height = GetSystemMetrics(SM_CYSCREEN);
+	SCREEN_WIDTH = width;
+	SCREEN_HEIGHT = height;
 }
 
 

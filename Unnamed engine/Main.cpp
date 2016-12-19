@@ -1,13 +1,15 @@
 #include <iostream>
-
 #include <cassert>
 #include <cmath>
 #include "Window.h"
 #include "Renderer.h"
+#include "Settings.h"
+
 #pragma comment(lib, "glew32.lib")
 
 int main(int argc, char ** argv)
 {
+	FOV = 60.0f;
 	Window *window = new Window();
 	Renderer *renderer = new Renderer(window->window);
 	bool closed = false;

@@ -10,6 +10,8 @@ Renderer::Renderer(SDL_Window *window)
 	glDisable(GL_CULL_FACE);
 	glMatrixMode(GL_PROJECTION);
 	this->window = window;
+	this->projectionMatrix = MyMath::createProjectionMatrix();
+	shader = new PrimitiveShaderProgram();
 }
 
 
@@ -39,4 +41,6 @@ void Renderer::Render()
 	glEnd();
 	SDL_GL_SwapWindow(window);
 }
+
+
 
