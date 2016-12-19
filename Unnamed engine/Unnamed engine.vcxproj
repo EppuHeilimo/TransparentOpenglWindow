@@ -154,15 +154,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Math.cpp" />
     <ClCompile Include="NoWindow.cpp" />
+    <ClCompile Include="PrimitiveShaderProgram.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Settings.h" />
     <ClInclude Include="NoWindow.h" />
+    <ClInclude Include="PrimitiveShaderProgram.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="ShaderProgram.h" />
     <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\primitiveShader.fs" />
+    <None Include="res\primitiveShader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
